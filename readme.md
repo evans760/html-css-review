@@ -18,16 +18,20 @@ This is a review of your working knowledge of HTML and CSS. Note that this revie
 1.) Create a valid, empty HTML page with the necessary tags.
 
 ```html
-<!-- Code goes here -->
+<!-- <!DOCTYPE html>
+<head></head>
+<body>
+</body>
+</html> -->
 ```
 
 2.) What are the differences between these tags?
 
 ```html
-<!-- Tag 1 -->
+<!-- self closing tag -->
 <img src="images/me.jpg" alt="My profile image">
 
-<!-- Tag 2 -->
+<!-- has an opening and closing tag -->
 <div></div>
 ```
 
@@ -42,17 +46,17 @@ Explain here.
 1.) Compare and contrast the following ways to add CSS to HTML elements.
 
 ```html
-<!-- Inline CSS -->
+<!-- inline has the highest priority, which means that it will override a style defined inside the <head> tag, or in an external style sheet, or a browser default value. -->
 <div style="background-color: red;"></div>
 
-<!-- Internal style sheet -->
+<!-- internal style sheet is a section on an html that contains style definitions. they are assoicated with the <style> tag within the <head> area of the doc. -->
 <style type="text/css">
   div {
     background-color: red;
   }
 </style>
 
-<!-- External style sheet (not shown) -->
+<!-- External style sheet is used when you link your html with a css style sheet. You then call the element in the style sheet to style it. -->
 <link rel="stylesheet" type="text/css" href="css/style.css">
 ```
 
@@ -63,29 +67,35 @@ Explain here
 2.) Below are some different CSS selectors. Use CSS comments to describe what each selector will do.
 
 ```css
-/* comment like this */
+/* will round the borders on all the divs */
 div {
   border-radius: 50%;
 }
 
+/* font of header paragraph within the .header class */
 .header p {
   font-size: 18px;
 }
 
+/* position of the class .footer */
 .footer {
   position: absolute;
   bottom: 0;
 }
 
+/* image on page */
 .splash-image {
   background-image: url("../images/ocean.jpg");
   background-size: cover;
   width: 100%;
 }
 
+/* an action when item in .ninja is hovered over */
 .ninja:hover {
   display: none;
   color: black;
 }
 ```
+
+
 
