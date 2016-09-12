@@ -18,27 +18,27 @@ This is a review of your working knowledge of HTML and CSS. Note that this revie
 1.) Create a valid, empty HTML page with the necessary tags.
 
 ```html
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <head></head>
 <body>
 </body>
-</html> -->
+</html>
 ```
 
 2.) What are the differences between these tags?
 
 ```html
-<!-- self closing tag -->
+self closing tag
 <img src="images/me.jpg" alt="My profile image">
 
-<!-- has an opening and closing tag -->
+has an opening and closing tag
 <div></div>
 ```
 
 ```
 Explain here.
 ```
-
+It is much better to use an opening and closing tag. a self closing tag is used for things like images and line breaks
 ---
 
 ## CSS
